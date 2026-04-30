@@ -1201,6 +1201,30 @@ footer.site-footer a:hover { color: var(--accent); }
 .form-submit .arrow { transition: transform 0.3s; }
 .form-submit:hover .arrow { transform: translateX(4px); }
 
+/* ============ AI-ASSISTED BADGE ============ */
+.ai-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: rgba(14, 14, 12, 0.85);
+  backdrop-filter: blur(8px);
+  color: var(--ink);
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  z-index: 2;
+  border: 1px solid var(--line);
+}
+
+.ai-badge::before {
+  content: '✦';
+  color: var(--accent);
+  margin-right: 0.4rem;
+}
+
 /* ============ REVEAL ============ */
 .reveal {
   opacity: 0;
