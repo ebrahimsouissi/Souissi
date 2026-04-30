@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About — Souissi Ibrahim</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400&family=Geist+Mono:wght@400;500&family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html" class="logo">Souissi Ibrahim<span class="dot">.</span></a>
+  <ul>
+    <li><a href="work.html" class="nav-link">Work</a></li>
+    <li><a href="about.html" class="nav-link active">About</a></li>
+    <li><a href="services.html" class="nav-link">Services</a></li>
+  </ul>
+  <a href="contact.html" class="cta-nav">Let's Talk</a>
+</nav>
+
+<!-- PAGE HEADER -->
+<header class="page-header">
+  <div>
+    <div class="page-header-eyebrow">A short biography</div>
+    <h1 class="page-header-title"><em>About.</em></h1>
+  </div>
+  <div class="page-header-meta">
+    <div class="meta-row">
+      <span>Based</span>
+      <span>Tunis, Tunisia</span>
+    </div>
+    <div class="meta-row">
+      <span>Working</span>
+      <span>Worldwide · Remote</span>
+    </div>
+    <div class="meta-row">
+      <span>Languages</span>
+      <span>FR · EN · AR</span>
+    </div>
+  </div>
+</header>
+
+<!-- ABOUT BODY -->
+<section class="about-page">
+  <div class="about-portrait reveal"></div>
+
+  <div class="about-text reveal">
+    <span class="small">— Bonjour, je suis Ibrahim.</span>
+
+    <p>
+      I'm a graphic designer based in Tunis, working with founders, editors, and creative teams across <em>North Africa, Europe, and the Gulf</em>. I started designing professionally in 2020 — first inside a small branding studio, then on my own.
+    </p>
+
+    <p>
+      My work sits at the intersection of <em>typography, identity, and rhythm</em>. I'm most useful when a brand needs a complete visual system: not just a logo, but a way of seeing, naming, and arranging things that holds up across print, motion, and the web.
+    </p>
+
+    <p>
+      I care about <em>craft and clarity</em> in equal measure. I think every detail is a decision and every decision should mean something. I'd rather design less, slower, and more intentionally than ship a generic system that disappears into the noise.
+    </p>
+
+    <p>
+      Outside of client work, I'm interested in editorial design, Arabic and Latin type pairing, and the quiet politics of visual language. I read more than I should and sleep less than I should — both habits I'm trying to fix.
+    </p>
+
+    <a href="#" class="about-resume-cta">Download Resume — PDF <span style="color: var(--accent);">↓</span></a>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills-section">
+  <div class="section-head reveal">
+    <div class="section-label">Toolkit · Stack &amp; Skills</div>
+    <h2 class="section-title">What I <em>use</em>, what I <em>do</em>.</h2>
+  </div>
+
+  <div class="skills-grid">
+    <div class="skill-card reveal">
+      <div class="skill-card-icon">✦</div>
+      <h3 class="skill-card-title">Design <em>Tools</em></h3>
+      <ul class="skill-card-list">
+        <li>Adobe Illustrator</li>
+        <li>Adobe Photoshop</li>
+        <li>Adobe InDesign</li>
+        <li>Figma</li>
+        <li>After Effects</li>
+        <li>Cinema 4D · Light</li>
+      </ul>
+    </div>
+
+    <div class="skill-card reveal">
+      <div class="skill-card-icon">✧</div>
+      <h3 class="skill-card-title">Disciplines</h3>
+      <ul class="skill-card-list">
+        <li>Brand Identity</li>
+        <li>Editorial &amp; Print</li>
+        <li>Motion Graphics</li>
+        <li>Social Media Design</li>
+        <li>Illustration</li>
+        <li>Web &amp; UI Design</li>
+        <li>Art Direction</li>
+      </ul>
+    </div>
+
+    <div class="skill-card reveal">
+      <div class="skill-card-icon">✶</div>
+      <h3 class="skill-card-title">Working <em>Style</em></h3>
+      <ul class="skill-card-list">
+        <li>Strategy first, design second</li>
+        <li>Tight feedback loops</li>
+        <li>Weekly deliverables</li>
+        <li>Source files always shared</li>
+        <li>Bilingual (FR/EN) workflow</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-eyebrow reveal">Still Reading?</div>
+  <h2 class="cta-title reveal">Let's get to <em>the work</em>.</h2>
+  <a href="contact.html" class="cta-button reveal">
+    Send me a brief <span class="arrow">→</span>
+  </a>
+</section>
+
+<footer class="site-footer">
+  <div>© 2026 — Souissi Ibrahim Studio</div>
+  <div class="socials">
+    <a href="#">Instagram</a>
+    <a href="#">Behance</a>
+    <a href="#">LinkedIn</a>
+    <a href="#">Dribbble</a>
+  </div>
+</footer>
+
+<script>
+  const revealItems = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 60);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  revealItems.forEach(item => observer.observe(item));
+</script>
+
+</body>
+</html>

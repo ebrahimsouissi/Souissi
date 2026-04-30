@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Maison Solène — Souissi Ibrahim</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400&family=Geist+Mono:wght@400;500&family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html" class="logo">Souissi Ibrahim<span class="dot">.</span></a>
+  <ul>
+    <li><a href="work.html" class="nav-link active">Work</a></li>
+    <li><a href="about.html" class="nav-link">About</a></li>
+    <li><a href="services.html" class="nav-link">Services</a></li>
+  </ul>
+  <a href="contact.html" class="cta-nav">Let's Talk</a>
+</nav>
+
+<!-- PROJECT HERO -->
+<section class="project-hero">
+  <a href="work.html" class="project-back">← Back to all work</a>
+  <h1 class="project-detail-title">Maison <em>Solène</em></h1>
+  <p style="font-family: var(--serif); font-size: 1.4rem; font-weight: 300; max-width: 600px; color: var(--ink-dim); line-height: 1.5; margin-top: 1rem;">
+    A complete brand identity and digital presence for an emerging maison de couture based between Tunis and Paris.
+  </p>
+
+  <div class="project-detail-meta">
+    <div class="detail-meta-block">
+      <span class="detail-meta-label">Client</span>
+      <span class="detail-meta-value">Maison Solène</span>
+    </div>
+    <div class="detail-meta-block">
+      <span class="detail-meta-label">Year</span>
+      <span class="detail-meta-value">2026</span>
+    </div>
+    <div class="detail-meta-block">
+      <span class="detail-meta-label">Services</span>
+      <span class="detail-meta-value">Identity, Web, Print</span>
+    </div>
+    <div class="detail-meta-block">
+      <span class="detail-meta-label">Role</span>
+      <span class="detail-meta-value">Lead Designer</span>
+    </div>
+  </div>
+</section>
+
+<!-- COVER IMAGE -->
+<div class="project-cover">
+  <div class="project-cover-img"></div>
+</div>
+
+<!-- BODY -->
+<article class="project-body">
+  <h2>The <em>brief</em>.</h2>
+  <p>
+    Maison Solène approached me three months before their first runway show with a request that's familiar but rarely simple: <strong>build a brand that feels heritage without being old.</strong> They had a name, a co-founder duo, and twelve looks. They needed everything else.
+  </p>
+  <p>
+    The challenge wasn't aesthetic — it was tonal. Most luxury fashion brands lean cold, distant, and architectural. Maison Solène's collections were intimate, hand-finished, and rooted in North African textile traditions. The branding had to honor that warmth without sliding into folk pastiche.
+  </p>
+
+  <h2>The <em>approach</em>.</h2>
+  <p>
+    I built the system around a single typographic decision: a custom-drawn ligature for the "S" in Solène, derived from the loop of a traditional <em>aklam</em> brushstroke. From there, the rest of the identity pulled in tight: a single typeface family (Editorial New), a restrained palette of bone, ink, and oxblood, and a photographic direction that emphasized texture over polish.
+  </p>
+  <p>
+    The website was built as a digital lookbook rather than a storefront — designed to be read, not skimmed. Every page is a chapter. Every product is a small story.
+  </p>
+
+  <h2>The <em>outcome</em>.</h2>
+  <p>
+    Maison Solène's first collection sold through pre-orders in eleven days. Press coverage in <strong>L'Officiel Arabia</strong> and <strong>Vogue Italia</strong> followed the runway. More importantly, the team reported that customers were quoting brand language back to them — which is the closest thing to a quiet win you get in this work.
+  </p>
+</article>
+
+<!-- GALLERY -->
+<section class="project-gallery">
+  <div class="gallery-item gallery-1"></div>
+  <div class="gallery-2-row">
+    <div class="gallery-item gallery-2a"></div>
+    <div class="gallery-item gallery-2b"></div>
+  </div>
+  <div class="gallery-item gallery-3"></div>
+</section>
+
+<!-- NEXT PROJECT -->
+<section class="next-project">
+  <div class="next-project-eyebrow">Next Project — № 02</div>
+  <a href="project.html" class="next-project-title">
+    Atlas <em>Cartography</em> <span class="arrow">→</span>
+  </a>
+</section>
+
+<footer class="site-footer">
+  <div>© 2026 — Souissi Ibrahim Studio</div>
+  <div class="socials">
+    <a href="#">Instagram</a>
+    <a href="#">Behance</a>
+    <a href="#">LinkedIn</a>
+    <a href="#">Dribbble</a>
+  </div>
+</footer>
+
+<script>
+  const revealItems = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 60);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  revealItems.forEach(item => observer.observe(item));
+</script>
+
+</body>
+</html>

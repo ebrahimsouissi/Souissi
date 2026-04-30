@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — Souissi Ibrahim</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400&family=Geist+Mono:wght@400;500&family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html" class="logo">Souissi Ibrahim<span class="dot">.</span></a>
+  <ul>
+    <li><a href="work.html" class="nav-link">Work</a></li>
+    <li><a href="about.html" class="nav-link">About</a></li>
+    <li><a href="services.html" class="nav-link">Services</a></li>
+  </ul>
+  <a href="contact.html" class="cta-nav">Let's Talk</a>
+</nav>
+
+<!-- PAGE HEADER -->
+<header class="page-header">
+  <div>
+    <div class="page-header-eyebrow">Get in touch · I read everything</div>
+    <h1 class="page-header-title">Let's <em>talk</em>.</h1>
+  </div>
+  <div class="page-header-meta">
+    <p style="font-family: var(--serif); font-size: 1.15rem; font-weight: 300; color: var(--ink-dim); line-height: 1.5;">
+      Tell me a little about your project — even a sentence is fine. I reply to every message within <em style="color: var(--accent); font-style: italic;">two business days</em>, usually faster.
+    </p>
+  </div>
+</header>
+
+<!-- CONTACT BODY -->
+<section class="contact-page">
+
+  <!-- LEFT: Direct + socials -->
+  <aside class="contact-side">
+    <div class="contact-direct">
+      <span class="contact-direct-label">Direct</span>
+      <a href="mailto:hello@souissibrahim.com" class="contact-direct-value">hello@souissibrahim.com</a>
+    </div>
+
+    <div class="contact-direct">
+      <span class="contact-direct-label">Whatsapp / Phone</span>
+      <a href="#" class="contact-direct-value">+216 XX XXX XXX</a>
+    </div>
+
+    <div>
+      <span class="contact-direct-label" style="display: block; margin-bottom: 1rem;">Elsewhere</span>
+      <div class="contact-socials-list">
+        <a href="#" class="contact-social-row">
+          <span>Instagram</span>
+          <span class="arrow">→</span>
+        </a>
+        <a href="#" class="contact-social-row">
+          <span>Behance</span>
+          <span class="arrow">→</span>
+        </a>
+        <a href="#" class="contact-social-row">
+          <span>LinkedIn</span>
+          <span class="arrow">→</span>
+        </a>
+        <a href="#" class="contact-social-row">
+          <span>Dribbble</span>
+          <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+
+    <div style="padding-top: 2rem; border-top: 1px solid var(--line);">
+      <span class="contact-direct-label" style="display: block; margin-bottom: 0.8rem;">Currently</span>
+      <p style="font-family: var(--serif); font-size: 1.1rem; font-style: italic; color: var(--ink); line-height: 1.4;">
+        Booking new projects from <em style="color: var(--accent);">Q3 2026</em>.
+      </p>
+    </div>
+  </aside>
+
+  <!-- RIGHT: Form -->
+  <form class="contact-form" id="contactForm">
+    <div class="form-row">
+      <div class="form-field">
+        <label>Name <span class="req">*</span></label>
+        <input type="text" name="name" placeholder="Your full name" required>
+      </div>
+      <div class="form-field">
+        <label>Email <span class="req">*</span></label>
+        <input type="email" name="email" placeholder="you@domain.com" required>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-field">
+        <label>Company / Project</label>
+        <input type="text" name="company" placeholder="If applicable">
+      </div>
+      <div class="form-field">
+        <label>Project type <span class="req">*</span></label>
+        <select name="project_type" required>
+          <option value="">Select one</option>
+          <option>Brand Identity</option>
+          <option>Editorial / Print</option>
+          <option>Motion Graphics</option>
+          <option>Social Media Design</option>
+          <option>Illustration</option>
+          <option>Web / UI Design</option>
+          <option>Art Direction</option>
+          <option>Something else</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-field">
+        <label>Budget range</label>
+        <select name="budget">
+          <option value="">Select one</option>
+          <option>Under $1,000</option>
+          <option>$1,000 — $5,000</option>
+          <option>$5,000 — $15,000</option>
+          <option>$15,000 — $30,000</option>
+          <option>$30,000+</option>
+          <option>Not sure yet</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label>Timeline</label>
+        <select name="timeline">
+          <option value="">Select one</option>
+          <option>ASAP / Rush</option>
+          <option>Within a month</option>
+          <option>1–3 months</option>
+          <option>Flexible</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-field">
+      <label>Tell me about your project <span class="req">*</span></label>
+      <textarea name="message" placeholder="A few sentences about what you're building, where you are, and what you need from me. The more context, the better the first reply." required></textarea>
+    </div>
+
+    <button type="submit" class="form-submit">
+      Send message <span class="arrow">→</span>
+    </button>
+  </form>
+
+</section>
+
+<footer class="site-footer">
+  <div>© 2026 — Souissi Ibrahim Studio</div>
+  <div class="socials">
+    <a href="#">Instagram</a>
+    <a href="#">Behance</a>
+    <a href="#">LinkedIn</a>
+    <a href="#">Dribbble</a>
+  </div>
+</footer>
+
+<script>
+  const revealItems = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 60);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  revealItems.forEach(item => observer.observe(item));
+
+  // Form: client-side acknowledgment only (real submission wires up in Phase 3 with Supabase)
+  document.getElementById('contactForm').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const btn = document.querySelector('.form-submit');
+    btn.innerHTML = 'Message sent — thank you ✓';
+    btn.style.background = 'var(--ink)';
+    btn.style.color = 'var(--bg)';
+    btn.disabled = true;
+  });
+</script>
+
+</body>
+</html>
