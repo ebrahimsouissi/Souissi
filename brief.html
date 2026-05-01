@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Start a Project — Ebrahim Souissi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400&family=Geist+Mono:wght@400;500&family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html" class="logo">Ebrahim Souissi<span class="dot">.</span></a>
+  <ul>
+    <li><a href="work.html" class="nav-link">Work</a></li>
+    <li><a href="about.html" class="nav-link">About</a></li>
+    <li><a href="services.html" class="nav-link">Services</a></li>
+  </ul>
+  <a href="contact.html" class="cta-nav">Quick Message</a>
+</nav>
+
+<div class="brief-page">
+
+  <!-- PROGRESS BAR -->
+  <div class="brief-progress">
+    <div class="brief-progress-bar">
+      <div class="brief-progress-fill" id="progressFill"></div>
+    </div>
+    <div class="brief-progress-meta">
+      <span><span class="accent" id="stepCurrent">01</span> / <span id="stepTotal">08</span></span>
+      <span id="stepLabel">Pick a service</span>
+    </div>
+  </div>
+
+  <!-- STAGE 0: Service -->
+  <section class="brief-stage active" data-stage="0" data-key="service">
+    <div class="brief-eyebrow">Step 01 · The kind of work</div>
+    <h1 class="brief-question">What can I <em>help you</em> with?</h1>
+    <p class="brief-helper">Pick one. We'll narrow down from here.</p>
+
+    <div class="brief-options service-options">
+      <button class="brief-option" data-value="Logo Design">
+        <div class="brief-option-visual svc-logo"></div>
+        <div class="brief-option-title">Logo <em>Design</em></div>
+        <div class="brief-option-desc">A single mark · From 150 TND</div>
+      </button>
+      <button class="brief-option" data-value="Brand Identity">
+        <div class="brief-option-visual svc-brand"></div>
+        <div class="brief-option-title">Brand <em>Identity</em></div>
+        <div class="brief-option-desc">Logo + system · From 400 TND</div>
+      </button>
+      <button class="brief-option" data-value="Social Media">
+        <div class="brief-option-visual svc-social"></div>
+        <div class="brief-option-title">Social <em>Media</em></div>
+        <div class="brief-option-desc">Post pack · From 200 TND</div>
+      </button>
+      <button class="brief-option" data-value="Print / Menu">
+        <div class="brief-option-visual svc-print"></div>
+        <div class="brief-option-title">Print <em>&amp; Menu</em></div>
+        <div class="brief-option-desc">Flyers, menus · From 150 TND</div>
+      </button>
+      <button class="brief-option" data-value="Illustration">
+        <div class="brief-option-visual svc-illust"></div>
+        <div class="brief-option-title"><em>Illustration</em></div>
+        <div class="brief-option-desc">Custom art · From 100 TND</div>
+      </button>
+      <button class="brief-option" data-value="Data Visualization">
+        <div class="brief-option-visual svc-data"></div>
+        <div class="brief-option-title">Data <em>Visualization</em></div>
+        <div class="brief-option-desc">Infographics · From 250 TND</div>
+      </button>
+      <button class="brief-option" data-value="Something else">
+        <div class="brief-option-visual svc-other"></div>
+        <div class="brief-option-title">Something <em>else</em></div>
+        <div class="brief-option-desc">Tell me about it</div>
+      </button>
+    </div>
+
+    <div class="brief-nav">
+      <button class="brief-btn" disabled>← Back</button>
+      <button class="brief-btn primary" data-action="next" disabled>Continue <span>→</span></button>
+    </div>
+  </section>
+
+  <!-- STAGE 1: Style direction -->
+  <section class="brief-stage" data-stage="1" data-key="style">
+    <div class="brief-eyebrow">Step 02 · Style direction</div>
+    <h1 class="brief-question">Which feels <em>most like</em> your brand?</h1>
+    <p class="brief-helper">Don't overthink it. Pick the one that catches your eye.</p>
+
+    <div class="brief-options">
+      <button class="brief-option" data-value="Minimal">
+        <div class="brief-option-visual style-minimal"></div>
+        <div class="brief-option-title"><em>Minimal</em></div>
+        <div class="brief-option-desc">Clean · Restrained · Spacious</div>
+      </button>
+      <button class="brief-option" data-value="Vintage">
+        <div class="brief-option-visual style-vintage"></div>
+        <div class="brief-option-title"><em>Vintage</em></div>
+        <div class="brief-option-desc">Heritage · Warm · Crafted</div>
+      </button>
+      <button class="brief-option" data-value="Bold">
+        <div class="brief-option-visual style-bold"></div>
+        <div class="brief-option-title"><em>Bold</em></div>
+        <div class="brief-option-desc">Confident · Loud · Direct</div>
+      </button>
+      <button class="brief-option" data-value="Elegant">
+        <div class="brief-option-visual style-elegant"></div>
+        <div class="brief-option-title"><em>Elegant</em></div>
+        <div class="brief-option-desc">Refined · Timeless · Quiet</div>
+      </button>
+      <button class="brief-option" data-value="Playful">
+        <div class="brief-option-visual style-playful"></div>
+        <div class="brief-option-title"><em>Playful</em></div>
+        <div class="brief-option-desc">Fun · Colorful · Energetic</div>
+      </button>
+    </div>
+
+    <div class="brief-nav">
+      <button class="brief-btn" data-action="back">← Back</button>
+      <button class="brief-btn primary" data-action="next" disabled>Continue <span>→</span></button>
+    </div>
+  </section>
+
+  <!-- STAGE 2: Typography feel -->
+  <section class="brief-stage" data-stage="2" data-key="typography">
+    <div class="brief-eyebrow">Step 03 · Typography feel</div>
+    <h1 class="brief-question">What kind of <em>letters</em> speak to you?</h1>
+    <p class="brief-helper">Each one carries a different mood. Pick what fits.</p>
+
+    <div class="brief-options">
+      <button class="brief-option" data-value="Serif">
+        <div class="brief-option-visual type-serif"></div>
+        <div class="brief-option-title"><em>Serif</em></div>
+        <div class="brief-option-desc">Editorial · Trusted · Classic</div>
+      </button>
+      <button class="brief-option" data-value="Sans Serif">
+        <div class="brief-option-visual type-sans"></div>
+        <div class="brief-option-title"><em>Sans Serif</em></div>
+        <div class="brief-option-desc">Modern · Clean · Direct</div>
+      </button>
+      <button class="brief-option" data-value="Script / Italic">
+        <div class="brief-option-visual type-script"></div>
+        <div class="brief-option-title">Script <em>/ Italic</em></div>
+        <div class="brief-option-desc">Personal · Romantic · Crafted</div>
+      </button>
+      <button class="brief-option" data-value="Display / Bold">
+        <div class="brief-option-visual type-display"></div>
+        <div class="brief-option-title">Display <em>/ Bold</em></div>
+        <div class="brief-option-desc">Loud · Memorable · Designed</div>
+      </button>
+    </div>
+
+    <div class="brief-nav">
+      <button class="brief-btn" data-action="back">← Back</button>
+      <button class="brief-btn primary" data-action="next" disabled>Continue <span>→</span></button>
+    </div>
+  </section>
+
+  <!-- STAGE 3: Color mood -->
+  <section class="brief-stage" data-stage="3" data-key="color">
+    <div class="brief-eyebrow">Step 04 · Color mood</div>
+    <h1 class="brief-question">What <em>palette</em> feels right?</h1>
+    <p class="brief-helper">Final colors come later. This just sets the temperature.</p>
+
+    <div class="brief-options">
+      <button class="brief-option" data-value="Warm">
+        <div class="brief-option-visual color-warm"></div>
+        <div class="brief-option-title"><em>Warm</em></div>
+        <div class="brief-option-desc">Reds · Oranges · Sunset</div>
+      </button>
+      <button class="brief-option" data-value="Cool">
+        <div class="brief-option-visual color-cool"></div>
+        <div class="brief-option-title"><em>Cool</em></div>
+        <div class="brief-option-desc">Blues · Teals · Ocean</div>
+      </button>
+      <button class="brief-option" data-value="Earthy">
+        <div class="brief-option-visual color-earthy"></div>
+        <div class="brief-option-title"><em>Earthy</em></div>
+        <div class="brief-option-desc">Browns · Sand · Olive</div>
+      </button>
+      <button class="brief-option" data-value="Vibrant">
+        <div class="brief-option-visual color-vibrant"></div>
+        <div class="brief-option-title"><em>Vibrant</em></div>
+        <div class="brief-option-desc">Pinks · Purples · Neon</div>
+      </button>
+      <button class="brief-option" data-value="Monochrome">
+        <div class="brief-option-visual color-mono"></div>
+        <div class="brief-option-title"><em>Monochrome</em></div>
+        <div class="brief-option-desc">Black · White · Grey</div>
+      </button>
+    </div>
+
+    <div class="brief-nav">
+      <button class="brief-btn" data-action="back">← Back</button>
+      <button class="brief-btn primary" data-action="next" disabled>Continue <span>→</span></button>
+    </div>
+  </section>
+
+  <!-- STAGE 4: Industry / vibe -->
+  <section class="brief-stage" data-stage="4" data-key="vibe">
+    <div class="brief-eyebrow">Step 05 · Industry &amp; vibe</div>
+    <h1 class="brief-question">How should it <em>feel</em> to your customers?</h1>
+    <p class="brief-helper">The atmosphere your brand walks into a room with.</p>
+
+    <div class="brief-options">
+      <button class="brief-option" data-value="Luxury">
+        <div class="brief-option-visual vibe-luxury"></div>
+        <div class="brief-option-title"><em>Luxury</em></div>
+        <div class="brief-option-desc">Premium · Considered · Quiet</div>
+      </button>
+      <button class="brief-option" data-value="Casual">
+        <div class="brief-option-visual vibe-casual"></div>
+        <div class="brief-option-title"><em>Casual</em></div>
+        <div class="brief-option-desc">Approachable · Honest · Direct</div>
+      </button>
+      <button class="brief-option" data-value="Tech">
+        <div class="brief-option-visual vibe-tech"></div>
+        <div class="brief-option-title"><em>Tech</em></div>
+        <div class="brief-option-desc">Forward · Sharp · Engineered</div>
+      </button>
+      <button class="brief-option" data-value="Artisan">
+        <div class="brief-option-visual vibe-artisan"></div>
+        <div class="brief-option-title"><em>Artisan</em></div>
+        <div class="brief-option-desc">Crafted · Rooted · Tactile</div>
+      </button>
+      <button class="brief-option" data-value="Friendly">
+        <div class="brief-option-visual vibe-friendly"></div>
+        <div class="brief-option-title"><em>Friendly</em></div>
+        <div class="brief-option-desc">Warm · Welcoming · Cheerful</div>
+      </button>
+    </div>
+
+    <div class="brief-nav">
+      <button class="brief-btn" data-action="back">← Back</button>
+      <button class="brief-btn primary" data-action="next" disabled>Continue <span>→</span></button>
+    </div>
+  </section>
+
+  <!-- STAGE 5: Logo type — only shown for Logo / Brand -->
+  <section class="brief-stage" data-stage="5" data-key="logoType" data-conditional="logo">
+    <div class="brief-eyebrow">Step 06 · Logo type</div>
+    <h1 class="brief-question">Which <em>kind</em> of mark fits?</h1>
+    <p class="brief-helper">Different forms work for different businesses.</p>
+
+    <div class="brief-options">
+      <button class="brief-option" data-value="Wordmark">
+        <div class="brief-option-visual logo-wordmark"></div>
+        <div class="brief-option-title"><em>Wordmark</em></div>
+        <div class="brief-option-desc">Just the name, styled</div>
+      </button>
+      <button class="brief-option" data-value="Icon + Text">
+        <div class="brief-option-visual logo-icon-text"></div>
+        <div class="brief-option-title">Icon <em>+ Text</em></div>
+        <div class="brief-option-desc">Symbol next to name</div>
+      </button>
+      <button class="brief-option" data-value="Icon Only">
+        <div class="brief-option-visual logo-icon-only"></div>
+        <div class="brief-option-title">Icon <em>Only</em></div>
+        <div class="brief-option-desc">A standalone symbol</div>
+      </button>
+      <button class="brief-option" data-value="Monogram">
+        <div class="brief-option-visual logo-monogram"></div>
+        <div class="brief-option-title"><em>Monogram</em></div>
+        <div class="brief-option-desc">Initials, styled</div>
+      </button>
+    </div>
+
+    <div class="brief-nav">
+      <button class="brief-btn" data-action="back">← Back</button>
+      <button class="brief-btn primary" data-action="next" disabled>Continue <span>→</span></button>
+    </div>
+  </section>
+
+  <!-- STAGE 6: Complexity -->
+  <section class="brief-stage" data-stage="6" data-key="complexity">
+    <div class="brief-eyebrow">Step 07 · Complexity</div>
+    <h1 class="brief-question">How <em>detailed</em> should it be?</h1>
+    <p class="brief-helper">Simple scales better. Detailed has more personality.</p>
+
+    <div class="brief-options">
+      <button class="brief-option" data-value="Simple / Iconic">
+        <div class="brief-option-visual complex-simple"></div>
+        <div class="brief-option-title"><em>Simple</em> / Iconic</div>
+        <div class="brief-option-desc">Stripped down · Memorable</div>
+      </button>
+      <button class="brief-option" data-value="Detailed">
+        <div class="brief-option-visual complex-detailed"></div>
+        <div class="brief-option-title"><em>Detailed</em></div>
+        <div class="brief-option-desc">Layered · Considered</div>
+      </button>
+      <button class="brief-option" data-value="Illustrative">
+        <div class="brief-option-visual complex-illustrative"></div>
+        <div class="brief-option-title"><em>Illustrative</em></div>
+        <div class="brief-option-desc">Decorative · Hand-feel</div>
+      </button>
+    </div>
+
+    <div class="brief-nav">
+      <button class="brief-btn" data-action="back">← Back</button>
+      <button class="brief-btn primary" data-action="next" disabled>Continue <span>→</span></button>
+    </div>
+  </section>
+
+  <!-- STAGE 7: Contact info -->
+  <section class="brief-stage" data-stage="7" data-key="contact">
+    <div class="brief-eyebrow">Step 08 · Tell me about you</div>
+    <h1 class="brief-question">Almost <em>done</em>.</h1>
+    <p class="brief-helper">Last bit — just so I can reach you back.</p>
+
+    <div class="brief-form">
+      <div class="form-field">
+        <label>Your name <span class="req">*</span></label>
+        <input type="text" id="briefName" placeholder="Full name" required>
+      </div>
+      <div class="form-field">
+        <label>Email <span class="req">*</span></label>
+        <input type="email" id="briefEmail" placeholder="you@domain.com" required>
+      </div>
+      <div class="form-field">
+        <label>Project / Business name</label>
+        <input type="text" id="briefCompany" placeholder="Optional">
+      </div>
+      <div class="form-field">
+        <label>Budget range</label>
+        <select id="briefBudget">
+          <option value="">Select one</option>
+          <option>Under 200 TND</option>
+          <option>200 – 500 TND</option>
+          <option>500 – 1000 TND</option>
+          <option>1000+ TND</option>
+          <option>International (USD/EUR)</option>
+          <option>Not sure yet</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label>Timeline</label>
+        <select id="briefTimeline">
+          <option value="">Select one</option>
+          <option>ASAP / Rush</option>
+          <option>Within 2 weeks</option>
+          <option>This month</option>
+          <option>Flexible</option>
+        </select>
+      </div>
+      <div class="form-field full">
+        <label>Anything else? (optional)</label>
+        <textarea id="briefMessage" placeholder="Background, references, vibes, links — anything that helps."></textarea>
+      </div>
+    </div>
+
+    <div class="brief-nav">
+      <button class="brief-btn" data-action="back">← Back</button>
+      <button class="brief-btn primary" data-action="finish">Review brief <span>→</span></button>
+    </div>
+  </section>
+
+  <!-- STAGE 8: Summary -->
+  <section class="brief-stage" data-stage="8" data-key="summary">
+    <div class="brief-eyebrow">Done · Here's your brief</div>
+    <h1 class="brief-question">Your <em>brief</em>, ready to send.</h1>
+    <p class="brief-helper">Review everything below. The button opens your email app with the full brief filled in — just hit send and I'll get back to you within 2 business days.</p>
+
+    <div class="brief-summary-grid" id="summaryGrid"></div>
+
+    <div class="brief-nav">
+      <button class="brief-btn" data-action="back">← Edit</button>
+      <button class="brief-btn primary" data-action="send">Send to Ebrahim <span>→</span></button>
+    </div>
+  </section>
+
+</div>
+
+<footer class="site-footer" style="margin-top: 4rem;">
+  <div>© 2026 — Ebrahim Souissi · Tunisia</div>
+  <div class="socials">
+    <a href="https://www.behance.net/ebrahimsouissi" target="_blank" rel="noopener">Behance</a>
+    <a href="https://www.linkedin.com/in/souissiebrahim/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://facebook.com/souissi.ebrahim" target="_blank" rel="noopener">Facebook</a>
+    <a href="https://youtube.com/@ramd591" target="_blank" rel="noopener">YouTube</a>
+  </div>
+</footer>
+
+<script>
+(function() {
+  const allStages = Array.from(document.querySelectorAll('.brief-stage'));
+  const answers = {};
+  let currentStage = 0;
+
+  // Returns the active list of stage indices, given current answers
+  // (skips the logo-type stage if service isn't a logo/brand thing)
+  function activeStages() {
+    return allStages.filter(stage => {
+      const cond = stage.dataset.conditional;
+      if (cond === 'logo') {
+        return answers.service === 'Logo Design' || answers.service === 'Brand Identity';
+      }
+      return true;
+    });
+  }
+
+  function totalActive() {
+    return activeStages().length;
+  }
+
+  function showStage(index) {
+    const list = activeStages();
+    allStages.forEach(s => s.classList.remove('active'));
+    if (index < 0) index = 0;
+    if (index >= list.length) index = list.length - 1;
+    list[index].classList.add('active');
+    currentStage = index;
+    updateProgress();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function updateProgress() {
+    const list = activeStages();
+    const total = list.length;
+    const fill = ((currentStage + 1) / total) * 100;
+    document.getElementById('progressFill').style.width = fill + '%';
+    document.getElementById('stepCurrent').textContent = String(currentStage + 1).padStart(2, '0');
+    document.getElementById('stepTotal').textContent = String(total).padStart(2, '0');
+
+    const active = list[currentStage];
+    const eyebrow = active.querySelector('.brief-eyebrow');
+    if (eyebrow) {
+      // Use a short label for the meta line
+      const labels = {
+        service: 'Pick a service',
+        style: 'Style direction',
+        typography: 'Typography',
+        color: 'Color mood',
+        vibe: 'Vibe',
+        logoType: 'Logo type',
+        complexity: 'Complexity',
+        contact: 'Your details',
+        summary: 'Review'
+      };
+      document.getElementById('stepLabel').textContent = labels[active.dataset.key] || '';
+    }
+  }
+
+  // Card selection
+  document.querySelectorAll('.brief-option').forEach(opt => {
+    opt.addEventListener('click', () => {
+      const stage = opt.closest('.brief-stage');
+      const key = stage.dataset.key;
+      // Clear siblings
+      stage.querySelectorAll('.brief-option').forEach(o => o.classList.remove('selected'));
+      opt.classList.add('selected');
+      answers[key] = opt.dataset.value;
+      // Enable continue button
+      const nextBtn = stage.querySelector('[data-action="next"]');
+      if (nextBtn) nextBtn.disabled = false;
+    });
+  });
+
+  // Nav buttons
+  document.querySelectorAll('[data-action="next"]').forEach(btn => {
+    btn.addEventListener('click', () => showStage(currentStage + 1));
+  });
+
+  document.querySelectorAll('[data-action="back"]').forEach(btn => {
+    btn.addEventListener('click', () => showStage(currentStage - 1));
+  });
+
+  // "Review brief" — capture form fields and show summary
+  const finishBtn = document.querySelector('[data-action="finish"]');
+  if (finishBtn) {
+    finishBtn.addEventListener('click', () => {
+      const name = document.getElementById('briefName').value.trim();
+      const email = document.getElementById('briefEmail').value.trim();
+      if (!name || !email) {
+        alert('Please fill in your name and email so I can reach you back.');
+        return;
+      }
+      answers.name = name;
+      answers.email = email;
+      answers.company = document.getElementById('briefCompany').value.trim();
+      answers.budget = document.getElementById('briefBudget').value;
+      answers.timeline = document.getElementById('briefTimeline').value;
+      answers.message = document.getElementById('briefMessage').value.trim();
+      buildSummary();
+      showStage(currentStage + 1);
+    });
+  }
+
+  function buildSummary() {
+    const grid = document.getElementById('summaryGrid');
+    const labelMap = {
+      service: 'Service',
+      style: 'Style',
+      typography: 'Typography',
+      color: 'Color mood',
+      vibe: 'Vibe',
+      logoType: 'Logo type',
+      complexity: 'Complexity',
+      name: 'From',
+      email: 'Email',
+      company: 'Project',
+      budget: 'Budget',
+      timeline: 'Timeline'
+    };
+    const order = ['service', 'style', 'typography', 'color', 'vibe', 'logoType', 'complexity', 'name', 'email', 'company', 'budget', 'timeline'];
+    grid.innerHTML = '';
+    order.forEach(key => {
+      if (!answers[key]) return;
+      const card = document.createElement('div');
+      card.className = 'summary-card';
+      card.innerHTML = `<div class="summary-label">${labelMap[key]}</div><div class="summary-value">${answers[key]}</div>`;
+      grid.appendChild(card);
+    });
+    if (answers.message) {
+      const card = document.createElement('div');
+      card.className = 'summary-card';
+      card.style.gridColumn = '1 / -1';
+      card.innerHTML = `<div class="summary-label">Notes</div><div class="summary-value" style="font-size: 1.1rem; font-style: italic; line-height: 1.5;">${answers.message.replace(/</g, '&lt;')}</div>`;
+      grid.appendChild(card);
+    }
+  }
+
+  // "Send to Ebrahim" — opens mail client
+  const sendBtn = document.querySelector('[data-action="send"]');
+  if (sendBtn) {
+    sendBtn.addEventListener('click', () => {
+      const subject = `New project brief — ${answers.service || 'Project'}${answers.company ? ' — ' + answers.company : ''}`;
+      const lines = [
+        `Hi Ebrahim,`,
+        ``,
+        `I've completed your visual brief. Here are my answers:`,
+        ``,
+        `— Service: ${answers.service || ''}`,
+        `— Style direction: ${answers.style || ''}`,
+        `— Typography: ${answers.typography || ''}`,
+        `— Color mood: ${answers.color || ''}`,
+        `— Vibe: ${answers.vibe || ''}`
+      ];
+      if (answers.logoType) lines.push(`— Logo type: ${answers.logoType}`);
+      lines.push(`— Complexity: ${answers.complexity || ''}`);
+      lines.push(``, `— Name: ${answers.name || ''}`);
+      lines.push(`— Email: ${answers.email || ''}`);
+      if (answers.company) lines.push(`— Project / Company: ${answers.company}`);
+      if (answers.budget) lines.push(`— Budget: ${answers.budget}`);
+      if (answers.timeline) lines.push(`— Timeline: ${answers.timeline}`);
+      if (answers.message) {
+        lines.push(``, `Notes:`, answers.message);
+      }
+      lines.push(``, `Looking forward to hearing back.`);
+      const body = encodeURIComponent(lines.join('\n'));
+      const url = `mailto:ebrahimsouissi@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+      window.location.href = url;
+    });
+  }
+
+  // Init
+  updateProgress();
+})();
+</script>
+
+</body>
+</html>
